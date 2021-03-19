@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\Company\CompanyEditWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Company\CompanyViewPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Cost\CostEditWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Cost\CostViewPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Items\ItemTypeEditWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Items\ItemTypePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Items\item\ItemEditWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Items\item\ItemPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Message\DisplayAlert.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Message\DisplayBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Message\DisplaySheet.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Report\BenifitWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Report\ReportMainPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Security\SecurityMainPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Store\Buy\BuyMainPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Store\Buy\BuyWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Store\Buy\ForPageWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Store\Buy\PacketWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Store\Sell\MainSellPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Store\Sell\PrintWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Store\Sell\SellChange.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Store\Stores\StoreWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\Store\StoreViewPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Company\CompanyEditWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Company\CompanyViewPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Cost\CostEditWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Cost\CostViewPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Items\ItemTypeEditWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Items\ItemTypePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Items\item\ItemEditWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Items\item\ItemPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Message\DisplayAlert.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Message\DisplayBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Message\DisplaySheet.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Report\BenifitWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Report\ReportMainPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Security\SecurityMainPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Store\Buy\BuyMainPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Store\Buy\BuyWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Store\Buy\ForPageWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Store\Buy\PacketWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Store\Sell\MainSellPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Store\Sell\PrintWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Store\Sell\SellChange.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Store\Stores\StoreWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Store\StoreViewPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

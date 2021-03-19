@@ -1,0 +1,165 @@
+﻿<Page x:Class="PharmacyHajiawa.Views.Store.Sell.MainSellPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PharmacyHajiawa.Views.Store.Sell" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+       Title="فرۆشتن" Loaded="Page_Loaded"
+      >
+
+    <Page.Resources>
+        <Style TargetType="DataGridCell">
+            <Style.Setters>
+                <Setter Property="TextBlock.TextAlignment" Value="Center" />
+                <Setter Property="TextBlock.VerticalAlignment" Value="Center"></Setter>
+            </Style.Setters>
+        </Style>
+        <Style x:Key="CenterGridHeaderStyle" TargetType="DataGridColumnHeader">
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+    </Page.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <materialDesign:Card Margin="10,2,10,2" Grid.Row="0" Background="WhiteSmoke" materialDesign:ShadowAssist.ShadowDepth="Depth2" Padding="3">
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <materialDesign:Card Margin="10,0" Padding="10,0" Background="WhiteSmoke" materialDesign:ShadowAssist.ShadowDepth="Depth2">
+                        <StackPanel  HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+                            <DatePicker x:Name="inSellDate" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <Label FontFamily="Arabic Typesetting" FontSize="24">:بەرواری فرۆشتن</Label>
+                        </StackPanel>
+                    </materialDesign:Card>
+                    <Label  FontSize="18" x:Name="inSellInvoiceId" FontWeight="Bold">0</Label>
+                    <Label FontFamily="Arabic Typesetting" FontSize="22">:کۆدی پسوڵەی فرۆشتن</Label>
+                </StackPanel>
+            </Grid>
+        </materialDesign:Card>
+
+
+        <materialDesign:Card Margin="10,2,10,0" Grid.Row="1" Background="WhiteSmoke" materialDesign:ShadowAssist.ShadowDepth="Depth2" Padding="3" Height="43" VerticalAlignment="Top">
+            <StackPanel   HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" 
+                        >
+                <Button Width="50" Background="Transparent" BorderThickness="0" Click="OnAddClicked">
+                    <TextBlock><materialDesign:PackIcon Width="30" Height="30" Kind="Add" Foreground="#27AEE9" HorizontalAlignment="Center" VerticalAlignment="Center"/></TextBlock>
+                </Button>
+
+                <TextBox x:Name="inBarcode" KeyDown="inBarcode_KeyDown" Margin="10,0" Width="180"></TextBox>
+                <Label FontFamily="Arabic Typesetting" FontSize="24">:بارکۆد ڕیدەر</Label>
+
+            </StackPanel>
+        </materialDesign:Card>
+        <!-- datagrid -->
+        <DataGrid
+                Grid.Row="2"
+                Margin="0,10,0,10"
+              Height="auto"
+                          Width="auto"
+                  ScrollViewer.CanContentScroll="True"
+                    ScrollViewer.VerticalScrollBarVisibility="Auto"
+                ColumnHeaderStyle="{DynamicResource CenterGridHeaderStyle}"
+                x:Name="mainDatagrid" 
+                CanUserAddRows="False"
+                CanUserDeleteRows="False"
+                CanUserReorderColumns="False" 
+                Focusable="False"
+                ColumnWidth="*"
+                RowHeight="50"
+              FontFamily="Arabic Typesetting" FontSize="30" MouseDoubleClick="mainDatagrid_MouseDoubleClick"
+                
+                >
+            <DataGrid.Columns>
+                <!--#region AddQuantity -->
+                <DataGridTemplateColumn Header="+">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button 
+    
+                    Width="60"
+                HorizontalAlignment="Center"
+                         Background="Transparent"
+                         BorderThickness="0"
+                         Click="OnAddQuantityClicked"
+                         >
+                                <materialDesign:PackIcon
+                        Width="30"
+                        Height="30"
+                        Kind="AddCircleOutline"
+                        Foreground="#27AEE9"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        />
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <!--#endregion-->
+
+                <!--#region MinusQuantity -->
+                <DataGridTemplateColumn Header="-">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button 
+                    Width="60"
+                HorizontalAlignment="Center"
+                         Background="Transparent"
+                         BorderThickness="0"
+                         Click="OnMinusQuantityClicked"
+                         >
+                                <materialDesign:PackIcon
+                        Width="30"
+                        Height="30"
+                        Kind="MinusCircleOutline"
+                        Foreground="#27AEE9"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        />
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <!--#endregion-->
+             
+
+
+            </DataGrid.Columns>
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type DataGridCell}">
+                                <Grid Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"/>
+                                </Grid>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </DataGrid.CellStyle>
+        </DataGrid>
+        <StackPanel Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Margin="0,0,0,12">
+            <Button Foreground="#0078D7" Background="White" Click="OnBuyClicked" Grid.Row="3" Width="100" Height="36" Margin="5,0" FontFamily="Arabic Typesetting"  FontSize="30">فرۆشتن</Button>
+
+            <TextBox x:Name="inTotal" IsEnabled="False"  TextChanged="inTotal_TextChanged" FontWeight="Bold" Margin="4,0,0,0" Width="200" FontSize="22" TextAlignment="Center"></TextBox>
+            <Label FontFamily="Arabic Typesetting"  FontSize="24">:کۆی گشتی</Label>
+
+            <TextBox x:Name="inDiscount"  Margin="4,0,0,0" Width="150" TextChanged="inDiscount_TextChanged"   FontSize="17" TextAlignment="Center" Text="0" LostFocus="inDiscount_LostFocus"  ></TextBox>
+            <Label FontFamily="Arabic Typesetting" FontSize="24">:خاتر</Label>
+        </StackPanel>
+    </Grid>
+
+</Page>

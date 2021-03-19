@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "nfNvv6KSatsaQg05+klKAg7FoONkTzE9HMRMT0Xeick+kqPSj4fmLZeBGIodOO7k94bhkvP+eH2zclUpVT6lxA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Shahram Adalat\\Documents\\MyProjects\\Pharmacy\\PharmacyApp\\PharmacyHajiawa\\PharmacyHajiawa.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Shahram Adalat\\.nuget\\packages\\materialdesigncolors\\1.2.7\\materialdesigncolors.1.2.7.nupkg.sha512",
+    "C:\\Users\\Shahram Adalat\\.nuget\\packages\\materialdesignthemes\\3.2.0\\materialdesignthemes.3.2.0.nupkg.sha512",
+    "C:\\Users\\Shahram Adalat\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\Shahram Adalat\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\Shahram Adalat\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
+    "C:\\Users\\Shahram Adalat\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Shahram Adalat\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Shahram Adalat\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Shahram Adalat\\.nuget\\packages\\system.data.sqlclient\\4.8.2\\system.data.sqlclient.4.8.2.nupkg.sha512",
+    "C:\\Users\\Shahram Adalat\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\Shahram Adalat\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
+    "C:\\Users\\Shahram Adalat\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\3.1.10\\microsoft.netcore.app.runtime.win-x86.3.1.10.nupkg.sha512",
+    "C:\\Users\\Shahram Adalat\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\3.1.10\\microsoft.windowsdesktop.app.runtime.win-x86.3.1.10.nupkg.sha512",
+    "C:\\Users\\Shahram Adalat\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\3.1.10\\microsoft.aspnetcore.app.runtime.win-x86.3.1.10.nupkg.sha512"
+  ],
+  "logs": []
+}

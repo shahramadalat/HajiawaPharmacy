@@ -1,0 +1,64 @@
+﻿<Window x:Class="PharmacyHajiawa.Views.Message.DisplayBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PharmacyHajiawa.Views.Message" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+     Title="هەڵبژاردنی ئامانجەکە"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        SizeToContent="WidthAndHeight"
+        Loaded="Window_Loaded">
+    <Grid>
+        <Border BorderBrush="Gray" CornerRadius="3" BorderThickness="2">
+            <StackPanel
+        Background="WhiteSmoke"
+        Height="auto" Width="250">
+                <materialDesign:Card
+                Background="WhiteSmoke"
+                >
+                    <StackPanel 
+                    x:Name="stackButtons"
+                    >
+                        <!--box1-->
+                        <TextBlock x:Name="box1Label"  Text="box1"  Margin="15,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="28" FontFamily="Arabic Typesetting" />
+                        <TextBox x:Name="box1" TextChanged="box1_TextChanged" Margin="5" Width="240" FontFamily="Arabic Typesetting" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" BorderBrush="#89000000"></TextBox>
+                        <!--box-2-->
+                        <TextBlock x:Name="box2Label" Text="box2"  Margin="15,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="28" FontFamily="Arabic Typesetting" />
+                        <TextBox x:Name="box2" TextChanged="box2_TextChanged" Margin="5" Width="240" FontFamily="Arabic Typesetting" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" BorderBrush="#89000000"></TextBox>
+                        <!--box-3 -->
+                        <TextBlock x:Name="box3Label" Text="box3"  Margin="15,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="28" FontFamily="Arabic Typesetting" />
+                        <TextBox x:Name="box3" TextChanged="box3_TextChanged" Margin="5" Width="240" FontFamily="Arabic Typesetting" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" BorderBrush="#89000000"></TextBox>
+
+                    </StackPanel>
+                </materialDesign:Card>
+
+                <StackPanel Margin="0,10">
+                    <Button
+                
+                Click="onChosenButton"
+                Background="Transparent"
+                Width="60"
+                BorderThickness="0"
+                >
+                        <TextBlock
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    >
+            <materialDesign:PackIcon
+                Width="30"
+                Height="30"
+                Kind="ArrowLeftBold"
+                Foreground="Aqua"
+                />
+                        </TextBlock>
+                    </Button>
+
+                </StackPanel>
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\NAMI\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\NAMI\\.nuget\\packages"
+    ]
+  }
+}

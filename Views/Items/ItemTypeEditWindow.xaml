@@ -1,0 +1,84 @@
+﻿<Window x:Class="PharmacyHajiawa.Views.Items.ItemTypeEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PharmacyHajiawa.Views.Items" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="دەستکاری کاڵا" 
+        Height="550"
+        Width="850" Loaded="Window_Loaded" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Border BorderBrush="Gray" BorderThickness="5" CornerRadius="3"></Border>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal" Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                <TextBox x:Name="textboxItemName" Width="250" FontFamily="Arabic Typesetting" FontSize="22" BorderBrush="#89000000" >
+
+                </TextBox>
+                <TextBlock Margin="15,0,0,0" HorizontalAlignment="Center" FontSize="24" FontFamily="Arabic Typesetting">
+                   جۆری کاڵا
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+                <Button Width="60" Height="40" 
+                        Margin="0,0,10,0"
+                        BorderThickness="0" 
+                        Background="Transparent" 
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                         Click="OnCheckClicked"
+                        >
+                    <TextBlock Foreground="#27AEE9">
+                        <materialDesign:PackIcon 
+                            Kind="CheckBold" 
+                            Height="30"
+                            Width="30"
+                            />
+                    </TextBlock>
+                </Button>
+                <!-- Button Delete-->
+                <Button x:Name="buttonDelete"
+                        Width="60" Height="40" 
+                        Margin="10,0,0,0"
+                        BorderThickness="0" 
+                        Background="Transparent" 
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Click="OnDeleteClicked"
+                         
+                        >
+                    <TextBlock Foreground="#27AEE9">
+                        <materialDesign:PackIcon 
+                            Kind="Delete" 
+                            Height="30"
+                            Width="30"
+                            />
+                    </TextBlock>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Width="60" 
+                        BorderThickness="0" 
+                        Background="Transparent" 
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Click="OnCancelClicked"
+                        >
+                    <materialDesign:PackIcon 
+                            Kind="ArrowLeftBold" 
+                            Height="30"
+                            Width="30"
+                        Foreground="#27AEE9"
+                            />
+
+                </Button>
+            </StackPanel>
+
+
+
+        </StackPanel>
+    </Grid>
+</Window>

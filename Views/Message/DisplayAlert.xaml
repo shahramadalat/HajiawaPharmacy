@@ -1,0 +1,92 @@
+﻿<Window x:Class="PharmacyHajiawa.Views.Message.DisplayAlert"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PharmacyHajiawa.Views.Message"
+        mc:Ignorable="d"
+         Title="نامە" 
+        Height="200"
+        Width="250"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None" >
+    <Border 
+       Background="WhiteSmoke"
+        BorderThickness="2"
+        CornerRadius="10"
+        BorderBrush="Gray">
+        <StackPanel>
+
+            <StackPanel  >
+
+                <TextBlock 
+                x:Name="txtTitle"
+                TextWrapping="Wrap"
+                HorizontalAlignment="Center"
+                Margin="0,10,0,0"
+                FlowDirection="RightToLeft"
+                FontFamily="Arabic Typesetting" 
+                FontSize="24"
+                >
+سڵاوتان لێبێ
+                </TextBlock>
+                <StackPanel
+                Background="Gray"
+                Height="1">
+
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Margin="10">
+
+                    <TextBlock 
+                    x:Name="txtMessage"
+                    TextWrapping="Wrap"
+                    FontSize="25" 
+                    VerticalAlignment="Center" 
+                    FontFamily="Arabic Typesetting" 
+                    FlowDirection="RightToLeft">
+                   لەبەر نەبونی پڕۆژە ببورە ناتوانی ئەم کردارە ئەنجام بەیت
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel
+                Margin="10"
+                Orientation="Horizontal"
+                HorizontalAlignment="Center"
+                >
+                    <Button
+             
+                    x:Name="btnFirst"
+                Margin="0,0,10,10"
+                Width="auto"
+                    Height="auto"
+                    Click="OnOkClicked"
+                    Background="#48B5FF"
+                    BorderThickness="0"
+                    FontFamily="Arabic Typesetting" 
+                    FontSize="24"
+                    >
+                        باشە
+                    </Button>
+                    <Button
+                    x:Name="secondbutton"
+                Margin="10,0,0,10"
+                Width="auto"
+                    Height="auto"
+                    Visibility="Visible"
+                    Click="OnSecondClicked"
+                    Background="#48B5FF"
+                    BorderThickness="0"
+                     
+                    FontFamily="Arabic Typesetting" 
+                    FontSize="24"
+                    >
+                        باش نیە
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+
+        </StackPanel>
+    </Border>
+</Window>

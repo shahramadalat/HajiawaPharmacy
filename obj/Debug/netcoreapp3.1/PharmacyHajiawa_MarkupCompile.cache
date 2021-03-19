@@ -1,0 +1,20 @@
+﻿PharmacyHajiawa
+
+
+winexe
+C#
+.cs
+C:\Users\Shahram Adalat\Documents\MyProjects\Pharmacy\PharmacyApp\PharmacyHajiawa\obj\Debug\netcoreapp3.1\
+PharmacyHajiawa
+none
+false
+TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
+C:\Users\Shahram Adalat\Documents\MyProjects\Pharmacy\PharmacyApp\PharmacyHajiawa\App.xaml
+18-1424928653
+11752267576
+401144286987
+195426845509
+MainWindow.xaml;Views\Company\CompanyEditWindow.xaml;Views\Company\CompanyViewPage.xaml;Views\Cost\CostEditWindow.xaml;Views\Cost\CostViewPage.xaml;Views\Items\ItemTypeEditWindow.xaml;Views\Items\ItemTypePage.xaml;Views\Items\item\ItemEditWindow.xaml;Views\Items\item\ItemPage.xaml;Views\Message\DisplayAlert.xaml;Views\Message\DisplaySheet.xaml;Views\Store\Buy\BuyMainPage.xaml;Views\Store\Buy\BuyWindow.xaml;Views\Store\Buy\ForPageWindow.xaml;Views\Store\Sell\MainSellPage.xaml;Views\Store\Sell\PrintWindow.xaml;Views\Store\Sell\SellChange.xaml;Views\Store\StoreViewPage.xaml;
+
+False
+

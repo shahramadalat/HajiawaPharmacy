@@ -1,0 +1,162 @@
+﻿<Page x:Class="PharmacyHajiawa.Views.Items.item.ItemPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PharmacyHajiawa.Views.Items.item" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+       Title="جۆری کاڵاکان" Loaded="Page_Loaded">
+
+
+    <Page.Resources>
+        <Style TargetType="DataGridCell">
+            <Style.Setters>
+                <Setter Property="TextBlock.TextAlignment" Value="Center" />
+                <Setter Property="TextBlock.VerticalAlignment" Value="Center"></Setter>
+            </Style.Setters>
+        </Style>
+        <Style x:Key="CenterGridHeaderStyle" TargetType="DataGridColumnHeader">
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
+    </Page.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <StackPanel Margin="10,5,10,5">
+         
+            <Button 
+                    x:Name="btnBack"
+                    Visibility="Visible"
+                    Width="50"
+                         Background="Transparent"
+                         BorderThickness="0"
+                         Click="OnBackClicked"
+                    HorizontalAlignment="Left"
+                    >
+                <materialDesign:PackIcon
+                        Width="30"
+                        Height="30"
+                        Kind="ArrowLeftBold"
+                        Foreground="#27AEE9"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        />
+            </Button>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Click="OnDeletedClicked" Width="150" Height="35" Margin="10,0" FontFamily="Arabic Typesetting"  FontSize="28">ڕەشکراوەکان</Button>
+                <Button  Click="OnAvailableClicked" Width="150" Height="35" Margin="10,0" FontFamily="Arabic Typesetting"  FontSize="28">بەردەست</Button>
+            </StackPanel>
+            <Line Margin="10,5,10,5" Stroke="#27AEE9"></Line>
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center"
+                        >
+                <Button 
+                    Width="50"
+                         Background="Transparent"
+                         BorderThickness="0"
+                         Click="OnAddClicked"
+                         >
+                    <materialDesign:PackIcon
+                        Width="30"
+                        Height="30"
+                        Kind="Add"
+                        Foreground="#27AEE9"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        />
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button 
+                            x:Name="buttonRemoveSearchText"
+                            Width="60"
+                         Background="Transparent" 
+                         BorderThickness="0"
+                         Click="OnRemoveTextboxSearch"
+                          Visibility="Hidden"
+                         >
+                    <materialDesign:PackIcon
+                        Width="30"
+                        Height="30"
+                        Kind="Close"
+                        Foreground="Gray"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        />
+                </Button>
+                <TextBox x:Name="textboxSeatch" HorizontalAlignment="Center" Width="200" 
+                     CaretBrush="Orange" 
+                     TextSearch.Text="Search here"
+                     TextChanged="OnItemTextChanged"
+                     >
+
+                </TextBox>
+                <materialDesign:PackIcon
+                        Width="30"
+                        Height="30"
+                        Kind="Search"
+                        Foreground="Orange"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        />
+            </StackPanel>
+            <materialDesign:Card Margin="5">
+                <TextBlock
+                        x:Name="textblockItemName"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        FontFamily="Arabic Typesetting"
+                        FontSize="30"
+                        >
+
+                </TextBlock>
+            </materialDesign:Card>
+
+
+
+        </StackPanel>
+        <DataGrid
+                Grid.Row="1"
+                Margin="5,10,5,10"
+                  Height="auto"
+                          Width="auto"
+                  ScrollViewer.CanContentScroll="True"
+                    ScrollViewer.VerticalScrollBarVisibility="Auto"
+                ColumnHeaderStyle="{DynamicResource CenterGridHeaderStyle}"
+                x:Name="mainDatagrid" 
+                CanUserAddRows="False"
+                CanUserDeleteRows="False"
+                CanUserReorderColumns="False" 
+                Focusable="False"
+                ColumnWidth="*"
+                RowHeight="50"
+                GotMouseCapture="mainDatagrid_GotMouseCapture" FontFamily="Arabic Typesetting" FontSize="30"
+                
+                >
+
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type DataGridCell}">
+                                <Grid Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"/>
+                                </Grid>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </DataGrid.CellStyle>
+        </DataGrid>
+
+    </Grid>
+
+
+</Page>

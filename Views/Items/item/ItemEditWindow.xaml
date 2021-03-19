@@ -1,0 +1,111 @@
+﻿<Window x:Class="PharmacyHajiawa.Views.Items.item.ItemEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PharmacyHajiawa.Views.Items.item" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="دەستکاری جۆری کاڵا" 
+        Height="550"
+        Width="850" Loaded="Window_Loaded" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Border BorderBrush="Gray" BorderThickness="5" CornerRadius="3"></Border>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="250" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <TextBox Grid.Row="0" Grid.Column="0" x:Name="textboxBarcode" Margin="5" Width="240" FontFamily="Arabic Typesetting" FontSize="22" BorderBrush="#89000000"></TextBox>
+                <TextBox Grid.Row="1" Grid.Column="0" x:Name="textboxScienceName" Margin="5" Width="240" FontFamily="Arabic Typesetting" FontSize="22" BorderBrush="#89000000"></TextBox>
+                <TextBox Grid.Row="2" Grid.Column="0" x:Name="textboxCommericalName" Margin="5" Width="240" FontFamily="Arabic Typesetting" FontSize="22" BorderBrush="#89000000"></TextBox>
+                <TextBox TextChanged="textboxPwoer_TextChanged" Grid.Row="3" Grid.Column="0" x:Name="textboxPwoer" Margin="5" Width="240" FontFamily="Arabic Typesetting" FontSize="22" BorderBrush="#89000000"></TextBox>
+
+                <TextBlock  Grid.Row="0" Grid.Column="1" Text="بارکۆد"  Margin="15,0,0,0" HorizontalAlignment="Center" FontSize="28" FontFamily="Arabic Typesetting" />
+                <TextBlock  Grid.Row="1" Grid.Column="1" Text="ناوی زانستی"  Margin="15,0,0,0" HorizontalAlignment="Center" FontSize="28" FontFamily="Arabic Typesetting" />
+                <TextBlock  Grid.Row="2" Grid.Column="1" Text="ناوی بازرگانی"  Margin="15,0,0,0" HorizontalAlignment="Center" FontSize="28" FontFamily="Arabic Typesetting" />
+                <TextBlock  Grid.Row="3" Grid.Column="1" Text="هێز"   Margin="15,0,0,0" HorizontalAlignment="Center" FontSize="28" FontFamily="Arabic Typesetting" />
+                
+
+            </Grid>
+            
+            <!--<StackPanel Orientation="Horizontal" Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                <TextBox x:Name="textbox" Width="250" FontFamily="Arabic Typesetting" FontSize="22" BorderBrush="#89000000" >
+
+                </TextBox>
+                <TextBlock Margin="15,0,0,0" HorizontalAlignment="Center" FontSize="24" FontFamily="Arabic Typesetting">
+                   جۆری کاڵا
+                </TextBlock>
+            </StackPanel>-->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,25,0,0">
+
+                <Button Width="60" Height="40" 
+                        Margin="0,0,10,0"
+                        BorderThickness="0" 
+                        Background="Transparent" 
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                         Click="OnCheckClicked"
+                        >
+                    <TextBlock Foreground="#27AEE9">
+                        <materialDesign:PackIcon 
+                            Kind="CheckBold" 
+                            Height="30"
+                            Width="30"
+                            />
+                    </TextBlock>
+                </Button>
+                <!-- Button Delete-->
+                <Button x:Name="buttonDelete"
+                        Width="60" Height="40" 
+                        Margin="10,0,0,0"
+                        BorderThickness="0" 
+                        Background="Transparent" 
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Click="OnDeleteClicked"
+                         
+                        >
+                    <TextBlock Foreground="#27AEE9">
+                        <materialDesign:PackIcon 
+                            Kind="Delete" 
+                            Height="30"
+                            Width="30"
+                            />
+                    </TextBlock>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Width="60" 
+                        BorderThickness="0" 
+                        Background="Transparent" 
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Click="OnCancelClicked"
+                        >
+                    <materialDesign:PackIcon 
+                            Kind="ArrowLeftBold" 
+                            Height="30"
+                            Width="30"
+                        Foreground="#27AEE9"
+                            />
+
+                </Button>
+            </StackPanel>
+
+
+
+        </StackPanel>
+    </Grid>
+</Window>
